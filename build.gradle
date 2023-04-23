@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'jpa-basic'
+version = '1.0-SNAPSHOT'
+description = 'ex1-hello-jpa-basic'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api 'org.hibernate:hibernate-entitymanager:5.5.10.Final'
+    api 'com.h2database:h2:1.4.199'
+}
+
+
