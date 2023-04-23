@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    api 'org.hibernate:hibernate-entitymanager:5.5.10.Final'
+    api 'org.hibernate:hibernate-entitymanager:5.4.10.Final'
     api 'com.h2database:h2:1.4.199'
 }
 
