@@ -15,6 +15,7 @@ public class Main {
 		try {
 			Order order = new Order();
 			order.addOrder(new OrderItem());
+			em.persist(order);
 
 			tx.commit();
 		} catch (Exception e) {
@@ -22,8 +23,6 @@ public class Main {
 		} finally {
 			em.close();
 		}
-
-		em.clear();
 		entityManagerFactory.close();
 	}
 }
