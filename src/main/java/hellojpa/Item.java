@@ -1,12 +1,13 @@
-package helloJpa;
+package hellojpa;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class MEMBER {
+public class Item {
 
 	@Id
+	@GeneratedValue
 	private Long id;
-	private String name;
 }

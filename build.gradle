@@ -1,11 +1,9 @@
 plugins {
     id 'java-library'
-    id 'maven-publish'
 }
 
 group = 'jpa-basic'
 version = '1.0-SNAPSHOT'
-description = 'ex1-hello-jpa-basic'
 sourceCompatibility = '11'
 
 repositories {
@@ -13,8 +11,16 @@ repositories {
 }
 
 dependencies {
-    api 'org.hibernate:hibernate-entitymanager:5.4.10.Final'
-    api 'com.h2database:h2:1.4.199'
+    implementation 'org.projectlombok:lombok:1.18.22'
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    implementation 'org.hibernate:hibernate-entitymanager:5.4.10.Final'
+    implementation 'com.h2database:h2:1.4.199'
+
 }
 
 
